@@ -1,0 +1,55 @@
+/* Navbar */
+nav {
+  /*   padding: 10px; */
+  background-color: #eee;
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100vw;
+  z-index: 10;
+}
+
+nav img {
+  width: 200px;
+  object-fit: contain;
+}
+
+nav .fa-bars {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.fa-times {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.open-nav {
+  padding: 20px;
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  background-color: #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+
+.open-nav ul li a {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.open-nav ul li {
+  margin: 40px 0;
+}
+
+@media (max-width: 650px) {
+  .open-nav .flex-row {
+    flex-direction: column-reverse;
+  }
+}

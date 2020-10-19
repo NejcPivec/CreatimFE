@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4.Naloga</title>
+  </head>
+  <body>
+    <script>
+      const object = {
+        alert: function (txt) {
+          alert(txt);
+          return this;
+        },
+        confirm: function (txt) {
+          confirm(txt);
+          return this;
+        },
+      };
+
+      object
+        .alert("Warning: you are about to delete this item!")
+        .confirm("Are you sure?");
+    </script>
+  </body>
+</html>

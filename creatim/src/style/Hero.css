@@ -1,0 +1,17 @@
+.carousel-wrapper {
+  height: 60vh;
+}
+
+.carousel-wrapper div img {
+  height: 60vh;
+}
+
+@media (max-width: 1000px) {
+  .carousel-wrapper {
+    height: 40vh;
+  }
+
+  .carousel-wrapper div img {
+    height: 40vh;
+  }
+}

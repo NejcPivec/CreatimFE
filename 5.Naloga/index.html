@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5.Naloga</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="element1">
+      <div id="element2">
+        <div id="element3"></div>
+      </div>
+    </div>
+
+    <p>Trenutno si na elementu:</p>
+    <p id="el"></p>
+
+    <script>
+      const element1 = document.getElementById("element1");
+      const element2 = document.getElementById("element2");
+      const element3 = document.getElementById("element3");
+
+      element1.addEventListener("mousemove", (e) => {
+        e.stopPropagation();
+        myFunction(e, "element 1");
+      });
+
+      element2.addEventListener("mousemove", (e) => {
+        e.stopPropagation();
+        myFunction(e, "element 2");
+      });
+
+      element3.addEventListener("mousemove", (e) => {
+        e.stopPropagation();
+        myFunction(e, "element 3");
+      });
+
+      function myFunction(e, msg) {
+        document.getElementById("el").innerText = msg;
+      }
+    </script>
+  </body>
+</html>
